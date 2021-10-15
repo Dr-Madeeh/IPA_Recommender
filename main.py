@@ -56,7 +56,7 @@ with st.form(key='mlform'):
     submit_message = st.form_submit_button(label='اقترح المزيد')
     
 if submit_message:
-    results = get_recommendation(message,cosine_sim_mat,df,10)
+    results = get_recommendation(message,cosine_sim_mat,df,3)
     #st.dataframe(results)
     for index, row in results.iterrows():
         st.info(row['old'])

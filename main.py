@@ -52,11 +52,12 @@ with st.form(key='mlform'):
 
     #message = st.text_area("")
     message = st.selectbox('اختر أحد المنتجات العلمية', titles)
+    numo = st.sidebar..selectbox('اختر عدد المنتجات العلمية المقترحة',  list(range(1, 11)))
 
     submit_message = st.form_submit_button(label='اقترح المزيد')
     
 if submit_message:
-    results = get_recommendation(message,cosine_sim_mat,df,3)
+    results = get_recommendation(message,cosine_sim_mat,df,numo)
     #st.dataframe(results)
     for index, row in results.iterrows():
         st.info(row['old'])

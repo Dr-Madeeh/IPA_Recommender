@@ -53,7 +53,7 @@ with st.form(key='mlform'):
     #message = st.text_area("")
     message = st.selectbox('اختر أحد المنتجات العلمية', titles)
     #numo = st.sidebar.selectbox('اختر عدد المنتجات العلمية المقترحة',  list(range(1, 11)))
-    nume = st.sidebar.slider('اختر عدد المنتجات العلمية المقترحة', 1,10,3)
+    numo = st.sidebar.slider('اختر عدد المنتجات العلمية المقترحة', 1,10,3)
 
     submit_message = st.form_submit_button(label='اقترح المزيد')
     

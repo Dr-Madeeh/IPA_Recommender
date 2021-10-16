@@ -43,7 +43,7 @@ def get_recommendation(title,cosine_sim_mat,df,num_of_rec=10):
 st.markdown("<h2 style='text-align: center;'>مقترح المنتجات العلمية الآلي </h2>", unsafe_allow_html=True)
   
 
-st.markdown("<h4 style='text-align: center; color: orange;'>اختر أحد المنتجات العلمية التي تعجبك وسوف نقترح عليك بعض المنتجات ذات العلاقةا</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: orange;'>اختر أحد المنتجات العلمية التي تعجبك وسوف نقترح عليك بعض المنتجات ذات العلاقة</h4>", unsafe_allow_html=True)
 
 
 with st.form(key='mlform'):
